@@ -25,7 +25,8 @@ Repo is described as
 - writeup (the writeup and solution scripts)
 - chal.txt (challenge description)
 - challenge.yaml ([kCTF](https://google.github.io/kctf/) configuration file)
-- Readme.md (this lol)
+- README.md (this lol)
+- LICENSE (MIT License)
 
 The original hosting for the challenge is offline, but I edited the challenge so you can self host it! 
 
@@ -36,6 +37,6 @@ cd challenge
 sudo docker compose up --build
 ```
 
-Then access the challenge at [localhost:5000](https:127.0.0.1:5000)
+Then access the challenge at [localhost:5000](https://127.0.0.1:5000)
 
 Try to figure it out yourself before you look at the writeup!!!
