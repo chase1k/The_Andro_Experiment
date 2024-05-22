@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANDRO</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #000000; 
+            font-family: 'Courier New', Courier, monospace;
+            color: #f0e4f5; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        }
+        .container {
+            width: 90%;
+            max-width: 800px; 
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: #919191;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: #e7b6fc;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .topnav a.active {
+            background-color: #555;
+            color: white;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+      
+    <div class="container">
+
+        <div class="topnav">
+            <a class="active" href="/">Home</a>
+            <a href="{{ url_for('static', filename='Andro.apk') }}">Download</a>
+            <a href="/ping">Ping</a>
+        </div>
+          
+        <p>App Ping Number = {{ ping_num }} </p>
+
+        <h1>ANDRO</h1>
+        <div class="image-container">
+            <img src="/static/evil_android-playstore.png" alt="Evil Android">
+        </div>
+        <p>Andro App, Download It <a href="{{ url_for('static', filename='Andro.apk') }}" download>here</a></p>
+
+    </div>
+
+</body>
+</html>

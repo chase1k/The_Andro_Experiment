@@ -1,0 +1,7 @@
+libdir=/home/chase/Documents/IdeaProjects/Cyber/ctf24/the_andro_experiment/Andro/prefix/armeabi-v7a/lib
+includedir=/home/chase/Documents/IdeaProjects/Cyber/ctf24/the_andro_experiment/Andro/prefix/armeabi-v7a/include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries and tools
+Version: 3.3.0-dev
+Requires: libssl libcrypto

@@ -1,0 +1,17 @@
+version: '3'
+volumes:
+  data:
+services:
+  andro-server:
+    build: 
+      context: .
+      dockerfile: andro-server.dockerfile
+    ports:
+      - "5000:5000"
+      - "1337:1337"
+    networks:
+      - andro
+    restart: always
+
+networks:
+  andro:
